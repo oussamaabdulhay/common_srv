@@ -4,17 +4,18 @@
 #include "std_srvs/Empty.h"
 #include "PosesMsg.hpp"
 
-class ROSUnit_GetPosesSrv : public ROSUnit
+class ROSUnit_UpdatePosesSrv : public ROSUnit
 {
 
     public:
-        ROSUnit_GetPosesSrv(std::string, ros::NodeHandle&);
-        ~ROSUnit_GetPosesSrv();
+    
+        ROSUnit_UpdatePosesSrv(std::string, ros::NodeHandle&);
+        ~ROSUnit_UpdatePosesSrv();
         void receive_msg_data(DataMessage* t_msg) {};
 
     private:
 
-        static ROSUnit_GetPosesSrv* m_ptr;
+        static ROSUnit_UpdatePosesSrv* m_ptr;
 
         ros::ServiceServer m_server;
 

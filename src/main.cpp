@@ -1,12 +1,12 @@
 #include "ros/ros.h"
 #include "iostream"
 
-#include "ROSUnit_GetFloatClnt.hpp"
-#include "ROSUnit_GetFloatSrv.hpp"
-#include "ROSUnit_GetPosesClnt.hpp"
-#include "ROSUnit_GetPosesSrv.hpp"
-#include "ROSUnit_GetTaggedPosesClnt.hpp"
-#include "ROSUnit_GetTaggedPosesSrv.hpp"
+#include "ROSUnit_UpdateFloatClnt.hpp"
+#include "ROSUnit_UpdateFloatSrv.hpp"
+#include "ROSUnit_UpdatePosesClnt.hpp"
+#include "ROSUnit_UpdatePosesSrv.hpp"
+#include "ROSUnit_UpdateTaggedPosesClnt.hpp"
+#include "ROSUnit_UpdateTaggedPosesSrv.hpp"
 #include "ROSUnit_SetFloatClnt.hpp"
 #include "ROSUnit_SetFloatSrv.hpp"
 #include "ROSUnit_SetIntClnt.hpp"
@@ -25,12 +25,12 @@ int main(int argc, char **argv)
 
 	ros::NodeHandle nh;
 
-	ROSUnit_GetFloatClnt tmp("/tmp", nh);
-	ROSUnit_GetFloatSrv tmp1("/tmp1", nh);
-	ROSUnit_GetPosesClnt tmp2("/tmp2", nh);
-	ROSUnit_GetPosesSrv tmp3("/tmp3", nh);
-	ROSUnit_GetTaggedPosesClnt tmp10("/tmp10", nh);
-	ROSUnit_GetTaggedPosesSrv tmp11("/tmp11", nh);
+	ROSUnit_UpdateFloatClnt tmp("/tmp", nh);
+	ROSUnit_UpdateFloatSrv tmp1("/tmp1", nh);
+	ROSUnit_UpdatePosesClnt tmp2("/tmp2", nh);
+	ROSUnit_UpdatePosesSrv tmp3("/tmp3", nh);
+	ROSUnit_UpdateTaggedPosesClnt tmp10("/tmp10", nh);
+	ROSUnit_UpdateTaggedPosesSrv tmp11("/tmp11", nh);
 	ROSUnit_SetFloatClnt tmp12("/tmp12", nh);
 	ROSUnit_SetFloatSrv tmp13("/tmp13", nh);
 	ROSUnit_SetIntClnt tmp4("/tmp4", nh);

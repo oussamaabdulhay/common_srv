@@ -2,17 +2,17 @@
 
 #include "ROSUnit.hpp"
 #include "std_srvs/Empty.h"
-#include "FloatMsg.hpp"
+#include "PosesMsg.hpp"
 
-class ROSUnit_GetFloatClnt : public ROSUnit
+class ROSUnit_UpdatePosesClnt : public ROSUnit
 {
     public:
-    
-        ROSUnit_GetFloatClnt(std::string, ros::NodeHandle&);
-        ~ROSUnit_GetFloatClnt();
+
+        ROSUnit_UpdatePosesClnt(std::string, ros::NodeHandle&);
+        ~ROSUnit_UpdatePosesClnt();
         void receive_msg_data(DataMessage* t_msg);
 
     private:
-        
+    
         ros::ServiceClient m_client;
 };

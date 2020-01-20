@@ -1,16 +1,16 @@
-#include "ROSUnit_GetTaggedPosesClnt.hpp"
+#include "ROSUnit_UpdateTaggedPosesClnt.hpp"
 
-ROSUnit_GetTaggedPosesClnt::ROSUnit_GetTaggedPosesClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
+ROSUnit_UpdateTaggedPosesClnt::ROSUnit_UpdateTaggedPosesClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
     m_client = t_main_handler.serviceClient<common_srv::set_int>(t_name);
 }
 
-ROSUnit_GetTaggedPosesClnt::~ROSUnit_GetTaggedPosesClnt()
+ROSUnit_UpdateTaggedPosesClnt::~ROSUnit_UpdateTaggedPosesClnt()
 {
 
 }
 
-void ROSUnit_GetTaggedPosesClnt::receive_msg_data(DataMessage* t_msg)
+void ROSUnit_UpdateTaggedPosesClnt::receive_msg_data(DataMessage* t_msg)
 {
     if(t_msg->getType() == msg_type::TAGGEDPOSES)
     {

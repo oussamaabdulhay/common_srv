@@ -4,18 +4,18 @@
 #include "std_srvs/Empty.h"
 #include "FloatMsg.hpp"
 
-class ROSUnit_GetFloatSrv : public ROSUnit
+class ROSUnit_UpdateFloatSrv : public ROSUnit
 {
 
     public:
 
-        ROSUnit_GetFloatSrv(std::string, ros::NodeHandle&);
-        ~ROSUnit_GetFloatSrv();
+        ROSUnit_UpdateFloatSrv(std::string, ros::NodeHandle&);
+        ~ROSUnit_UpdateFloatSrv();
         void receive_msg_data(DataMessage* t_msg){};
 
     private:
 
-        static ROSUnit_GetFloatSrv* m_ptr;
+        static ROSUnit_UpdateFloatSrv* m_ptr;
 
         ros::ServiceServer m_server;
 
