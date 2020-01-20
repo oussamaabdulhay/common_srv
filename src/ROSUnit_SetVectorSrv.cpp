@@ -15,6 +15,7 @@ ROSUnit_SetVectorSrv::~ROSUnit_SetVectorSrv()
 
 bool ROSUnit_SetVectorSrv::srv_callback(common_srv::set_vector::Request& req, common_srv::set_vector::Response& res)
 {
+    //Change the code below to reflect your system
     VectorMsg t_msg;
     t_msg.p1.x = req.p1.x;
     t_msg.p1.y = req.p1.y;
@@ -22,7 +23,6 @@ bool ROSUnit_SetVectorSrv::srv_callback(common_srv::set_vector::Request& req, co
     t_msg.p2.x = req.p2.x;
     t_msg.p2.y = req.p2.y;
     t_msg.p2.z = req.p2.z;
-
     m_ptr->emit_message((DataMessage*) &t_msg);
     return true;
 }

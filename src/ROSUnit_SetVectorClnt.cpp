@@ -12,6 +12,7 @@ ROSUnit_SetVectorClnt::~ROSUnit_SetVectorClnt()
 
 void ROSUnit_SetVectorClnt::receive_msg_data(DataMessage* t_msg)
 {
+    //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::VECTOR)
     {
         common_srv::set_vector t_srv;

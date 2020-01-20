@@ -15,6 +15,7 @@ ROSUnit_SetIntSrv::~ROSUnit_SetIntSrv()
 
 bool ROSUnit_SetIntSrv::srv_callback(common_srv::set_int::Request& req, common_srv::set_int::Response& res)
 {
+    //Change the code below to reflect your system
     IntegerMsg t_msg;
     t_msg.data = req.data;
     m_ptr->emit_message((DataMessage*) &t_msg);

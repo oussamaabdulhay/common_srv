@@ -12,6 +12,7 @@ ROSUnit_SetPointClnt::~ROSUnit_SetPointClnt()
 
 void ROSUnit_SetPointClnt::receive_msg_data(DataMessage* t_msg)
 {
+    //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::VECTOR3D)
     {
         common_srv::set_point t_srv;

@@ -15,6 +15,7 @@ ROSUnit_SetPosesSrv::~ROSUnit_SetPosesSrv ()
 
 bool ROSUnit_SetPosesSrv::srv_callback(common_srv::set_poses::Request& req, common_srv::set_poses::Response& res)
 {
+    //Change the code below to reflect your system
     PosesMsg t_msg;
     for(int i = 0; i < req.poses.pose.size(); i++)
     {

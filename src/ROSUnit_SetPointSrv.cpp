@@ -15,6 +15,7 @@ ROSUnit_SetPointSrv::~ROSUnit_SetPointSrv()
 
 bool ROSUnit_SetPointSrv::srv_callback(common_srv::set_point::Request& req, common_srv::set_point::Response& res)
 {
+    //Change the code below to reflect your system
     Vector3DMessage t_msg;
     Vector3D<float> t_vec;
     t_vec.x = req.p.x;

@@ -15,6 +15,7 @@ ROSUnit_SetFloatSrv::~ROSUnit_SetFloatSrv()
 
 bool ROSUnit_SetFloatSrv::srv_callback(common_srv::set_float::Request& req, common_srv::set_float::Response& res)
 {
+    //Change the code below to reflect your system
     FloatMsg t_msg;
     t_msg.data = req.data;
     m_ptr->emit_message((DataMessage*) &t_msg);

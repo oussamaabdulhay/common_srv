@@ -1,16 +1,17 @@
 #pragma once
 
 #include "ROSUnit.hpp"
-#include "Vector3DMessage.hpp"
+#include "geometry_msgs/Point.h"
+#include "common_srv/set_points.h"
 //Change the msg type code to reflect your system
-#include "common_srv/set_point.h"
+#include "PointsMsg.hpp"
 
-class ROSUnit_SetPointClnt : public ROSUnit
+class ROSUnit_SetPointsClnt : public ROSUnit
 {
     public:
 
-        ROSUnit_SetPointClnt(std::string, ros::NodeHandle&);
-        ~ROSUnit_SetPointClnt();
+        ROSUnit_SetPointsClnt(std::string, ros::NodeHandle&);
+        ~ROSUnit_SetPointsClnt();
         //Change the receive_msg_data code to reflect your system
         void receive_msg_data(DataMessage* t_msg);
 

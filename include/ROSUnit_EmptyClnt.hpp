@@ -1,16 +1,16 @@
 #pragma once
 
 #include "ROSUnit.hpp"
-#include "common_srv/set_float.h"
+#include "std_srvs/Empty.h"
 //Change the msg type to match your received msg
-#include "FloatMsg.hpp"
+#include "EmptyMsg.hpp"
 
-class ROSUnit_SetFloatClnt : public ROSUnit
+class ROSUnit_EmptyClnt : public ROSUnit
 {
     public:
-
-        ROSUnit_SetFloatClnt(std::string, ros::NodeHandle&);
-        ~ROSUnit_SetFloatClnt();
+    
+        ROSUnit_EmptyClnt(std::string, ros::NodeHandle&);
+        ~ROSUnit_EmptyClnt();
         //Change the receive_msg_data code to reflect your system
         void receive_msg_data(DataMessage* t_msg);
 
