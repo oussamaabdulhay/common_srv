@@ -15,8 +15,15 @@ class ROSUnit_EmptySrv : public ROSUnit
 
     private:
 
-        static ROSUnit_EmptySrv* m_ptr;
-        ros::ServiceServer m_server;
-        //Change the srv_callback code to reflect your system
-        static bool srv_callback(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
+    ros::ServiceServer m_server;
+    static int internal_counter;
+    static ROSUnit_EmptySrv* m_ptr[ROSUnit_capacity];
+    //Change the srv_callback code to reflect your system
+    static bool(*callbackFunctionPointer[ROSUnit_capacity])(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
+    static bool srv_callback1(std_srvs::Empty::Request&, std_srvs::Empty::Response&);//TODO refactor through templates
+    static bool srv_callback2(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
+    static bool srv_callback3(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
+    static bool srv_callback4(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
+    static bool srv_callback5(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
+
 };

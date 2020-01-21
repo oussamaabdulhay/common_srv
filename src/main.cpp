@@ -1,6 +1,6 @@
 #include "ros/ros.h"
 #include "iostream"
-
+#include "ROSUnit_Factory.hpp"
 #include "ROSUnit_EmptyClnt.hpp"
 #include "ROSUnit_EmptySrv.hpp"
 #include "ROSUnit_SetFloatClnt.hpp"
@@ -25,22 +25,24 @@ int main(int argc, char **argv)
 
 	ros::NodeHandle nh;
 
-	ROSUnit_EmptyClnt tmp1("/tmp1", nh);
-	ROSUnit_EmptySrv tmp2("/tmp1", nh);
-	ROSUnit_SetFloatClnt tmp3("/tmp3", nh);
-	ROSUnit_SetFloatSrv tmp4("/tmp3", nh);
-	ROSUnit_SetIntClnt tmp5("/tmp5", nh);
-	ROSUnit_SetIntSrv tmp6("/tmp5", nh);
-	ROSUnit_SetPointClnt tmp7("/tmp7", nh);
-	ROSUnit_SetPointSrv tmp8("/tmp7", nh);
-	ROSUnit_SetPointsClnt tmp9("/tmp9", nh);
-	ROSUnit_SetPointsSrv tmp10("/tmp9", nh);
-	ROSUnit_SetPoseClnt tmp11("/tmp11", nh);
-	ROSUnit_SetPoseSrv tmp12("/tmp11", nh);
-	ROSUnit_SetPosesClnt tmp13("/tmp13", nh);
-	ROSUnit_SetPosesSrv tmp14("/tmp13", nh);
-	ROSUnit_SetVectorClnt tmp15("/tmp15", nh);
-	ROSUnit_SetVectorSrv tmp16("/tmp15", nh);
+	// ROSUnit_EmptyClnt tmp1("/tmp1", nh);
+	// ROSUnit_EmptySrv tmp2("/tmp1", nh);
+	// ROSUnit_SetFloatClnt tmp3("/tmp3", nh);
+	// ROSUnit_SetFloatSrv tmp4("/tmp3", nh);
+	// ROSUnit_SetIntClnt tmp5("/tmp5", nh);
+	// ROSUnit_SetIntSrv tmp6("/tmp5", nh);
+	// ROSUnit_SetPointClnt tmp7("/tmp7", nh);
+	// ROSUnit_SetPointSrv tmp8("/tmp7", nh);
+	// ROSUnit_SetPointsClnt tmp9("/tmp9", nh);
+	// ROSUnit_SetPointsSrv tmp10("/tmp9", nh);
+	// ROSUnit_SetPoseClnt tmp11("/tmp11", nh);
+	// ROSUnit_SetPoseSrv tmp12("/tmp11", nh);
+	// ROSUnit_SetPosesClnt tmp13("/tmp13", nh);
+	// ROSUnit_SetPosesSrv tmp14("/tmp13", nh);
+	// ROSUnit_SetVectorClnt tmp15("/tmp15", nh);
+	// ROSUnit_SetVectorSrv tmp16("/tmp15", nh);
+
+	ROSUnit_Factory ROSUnit_Factory_main{nh};
 
 	std::cout << "HI (:" << std::endl;
 

@@ -7,16 +7,25 @@
 
 class ROSUnit_SetPoseSrv : public ROSUnit
 {
-    public:
+public:
     
-        ROSUnit_SetPoseSrv(std::string, ros::NodeHandle&);
-        ~ROSUnit_SetPoseSrv();
-        void receive_msg_data(DataMessage* t_msg){};
+    ROSUnit_SetPoseSrv(std::string, ros::NodeHandle&);
+    ~ROSUnit_SetPoseSrv();
+    void receive_msg_data(DataMessage* t_msg){};
 
-    private:
+private:
 
-        static ROSUnit_SetPoseSrv* m_ptr;
-        ros::ServiceServer m_server;
-        //Change the srv_callback code to reflect your system
-        static bool srv_callback(common_srv::set_pose::Request&, common_srv::set_pose::Response&);
+    ros::ServiceServer m_server;
+
+    static int internal_counter;
+    static ROSUnit_SetPoseSrv* m_ptr[ROSUnit_capacity];
+    //Change the srv_callback code to reflect your system
+    static bool(*callbackFunctionPointer[ROSUnit_capacity])(common_srv::set_pose::Request&, common_srv::set_pose::Response&);
+    static bool srv_callback1(common_srv::set_pose::Request&, common_srv::set_pose::Response&);//TODO refactor through templates
+    static bool srv_callback2(common_srv::set_pose::Request&, common_srv::set_pose::Response&);
+    static bool srv_callback3(common_srv::set_pose::Request&, common_srv::set_pose::Response&);
+    static bool srv_callback4(common_srv::set_pose::Request&, common_srv::set_pose::Response&);
+    static bool srv_callback5(common_srv::set_pose::Request&, common_srv::set_pose::Response&);
+
+
 };

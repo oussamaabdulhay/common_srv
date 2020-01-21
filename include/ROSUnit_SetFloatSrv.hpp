@@ -7,16 +7,22 @@
 
 class ROSUnit_SetFloatSrv : public ROSUnit
 {
-    public:
+public:
 
-        ROSUnit_SetFloatSrv(std::string, ros::NodeHandle&);
-        ~ROSUnit_SetFloatSrv();
-        void receive_msg_data(DataMessage* t_msg) {};
+    ROSUnit_SetFloatSrv(std::string, ros::NodeHandle&);
+    ~ROSUnit_SetFloatSrv();
+    void receive_msg_data(DataMessage* t_msg) {};
+    
+private:
 
-    private:
-
-        static ROSUnit_SetFloatSrv* m_ptr;
-        ros::ServiceServer m_server;
-        //Change the srv_callback code to reflect your system
-        static bool srv_callback(common_srv::set_float::Request&, common_srv::set_float::Response&);
+    ros::ServiceServer m_server;
+    static int internal_counter;
+    static ROSUnit_SetFloatSrv* m_ptr[ROSUnit_capacity];
+    //Change the srv_callback code to reflect your system
+    static bool(*callbackFunctionPointer[ROSUnit_capacity])(common_srv::set_float::Request&, common_srv::set_float::Response&);
+    static bool srv_callback1(common_srv::set_float::Request&, common_srv::set_float::Response&);//TODO refactor through templates
+    static bool srv_callback2(common_srv::set_float::Request&, common_srv::set_float::Response&);
+    static bool srv_callback3(common_srv::set_float::Request&, common_srv::set_float::Response&);
+    static bool srv_callback4(common_srv::set_float::Request&, common_srv::set_float::Response&);
+    static bool srv_callback5(common_srv::set_float::Request&, common_srv::set_float::Response&);
 };
