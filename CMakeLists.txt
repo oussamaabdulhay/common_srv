@@ -15,6 +15,7 @@ add_message_files(
   FILES
   Pose.msg
   Poses.msg
+  Point2D.msg
 )
 
 add_service_files(
