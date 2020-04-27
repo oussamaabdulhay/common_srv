@@ -1,4 +1,4 @@
-#include "PosesMsg.hpp"
+#include "common_srv_library/PosesMsg.hpp"
 
 PosesMsg::PosesMsg()
 {

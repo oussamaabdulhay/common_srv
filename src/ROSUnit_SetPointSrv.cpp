@@ -1,4 +1,4 @@
-#include "ROSUnit_SetPointSrv.hpp"
+#include "common_srv_library/ROSUnit_SetPointSrv.hpp"
 
 ROSUnit_SetPointSrv* ROSUnit_SetPointSrv::m_ptr[ROSUnit_capacity];
 int ROSUnit_SetPointSrv::internal_counter=0;

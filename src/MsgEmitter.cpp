@@ -3,7 +3,7 @@
 // Date: 09 Mar 2020
 // Release note: Removed broadcast channels
 
-#include "MsgEmitter.hpp"
+#include "common_srv_library/MsgEmitter.hpp"
 using namespace std;
 
 void MsgEmitter::addCallbackMsgReceiver(MsgReceiver* _callback_msg_receiver){

@@ -1,4 +1,4 @@
-#include "filterPointMsg.hpp"
+#include "common_srv_library/filterPointMsg.hpp"
 
 filterPointMsg::filterPointMsg() {
 }

@@ -3,7 +3,7 @@
 // Date: 09 Mar 2020
 // Release note: Removed broadcast channels
 
-#include "MsgReceiver.hpp"
+#include "common_srv_library/MsgReceiver.hpp"
 
 void MsgReceiver::assignMsgTypeID(msg_type i){
     this->_msg_type=i;
