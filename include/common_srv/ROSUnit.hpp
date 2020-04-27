@@ -5,7 +5,7 @@
 #include "std_msgs/String.h"
 #include "common_srv/MsgReceiver.hpp"
 #include "common_srv/MsgEmitter.hpp"
-#include "common_srv/common_types.hpp"
+#include "common_srv/msg_types.hpp"
 
 const int ROSUnit_capacity=7;
 class ROSUnit : public MsgEmitter, public MsgReceiver{

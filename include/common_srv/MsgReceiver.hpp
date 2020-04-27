@@ -6,7 +6,7 @@
 #pragma once
 
 #include <iostream>
-#include "common_srv/common_types.hpp"
+#include "common_srv/msg_types.hpp"
 #include "common_srv/DataMessage.hpp"
 const int msg_broadcast_channel=-1;
 class MsgReceiver {

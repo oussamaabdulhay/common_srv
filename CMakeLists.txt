@@ -38,6 +38,8 @@ generate_messages(
 )
 
 catkin_package(
+  INCLUDE_DIRS include
+  LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS
     roscpp
     std_msgs
@@ -47,18 +49,28 @@ catkin_package(
 
 
 include_directories(
-  ${CMAKE_CURRENT_SOURCE_DIR}/include
-  ${catkin_INCLUDE_DIRS}
   include
+  ${catkin_INCLUDE_DIRS}
 )
 
 
-FILE(GLOB SOURCE_FILES *.hpp *.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
+FILE(GLOB SOURCE_FILES *.cpp
+        src/*.cpp
         )
 
-
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS})
-add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
+add_library(${PROJECT_NAME}
+  ${SOURCE_FILES}
+)
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
+
+install(
+  TARGETS ${PROJECT_NAME}
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
+)
+
+install(
+  DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+)

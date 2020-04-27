@@ -4,7 +4,7 @@
 
 #pragma once
 #include <list>
-#include "common_srv/common_types.hpp"
+#include "common_srv/msg_types.hpp"
 
 class DataMessage {
 
