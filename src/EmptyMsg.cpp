@@ -1,4 +1,4 @@
-#include "common_srv_library/EmptyMsg.hpp"
+#include "common_srv/EmptyMsg.hpp"
 
 EmptyMsg::EmptyMsg()
 {

@@ -1,4 +1,4 @@
-#include "common_srv_library/ROSUnit_SetIntSrv.hpp"
+#include "common_srv/ROSUnit_SetIntSrv.hpp"
 
 ROSUnit_SetIntSrv* ROSUnit_SetIntSrv::m_ptr[ROSUnit_capacity];
 int ROSUnit_SetIntSrv::internal_counter=0;

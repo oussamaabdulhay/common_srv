@@ -1,4 +1,4 @@
-#include "common_srv_library/DoubleMsg.hpp"
+#include "common_srv/DoubleMsg.hpp"
 
 DoubleMsg::DoubleMsg()
 {

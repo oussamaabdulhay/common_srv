@@ -1,4 +1,4 @@
-#include "common_srv_library/VectorDoubleMsg.hpp"
+#include "common_srv/VectorDoubleMsg.hpp"
 
 VectorDoubleMsg::VectorDoubleMsg()
 {

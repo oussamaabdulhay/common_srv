@@ -1,4 +1,4 @@
-#include "common_srv_library/ROSUnit_SetIntClnt.hpp"
+#include "common_srv/ROSUnit_SetIntClnt.hpp"
 
 ROSUnit_SetIntClnt::ROSUnit_SetIntClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {

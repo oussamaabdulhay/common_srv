@@ -1,4 +1,4 @@
-#include "common_srv_library/IntegerMsg.hpp"
+#include "common_srv/IntegerMsg.hpp"
 
 IntegerMsg::IntegerMsg()
 {

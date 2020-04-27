@@ -1,4 +1,4 @@
-#include "common_srv_library/BooleanMsg.hpp"
+#include "common_srv/BooleanMsg.hpp"
 
 BooleanMsg::BooleanMsg() {
 

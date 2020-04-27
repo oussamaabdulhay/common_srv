@@ -1,7 +1,7 @@
 #include "ros/ros.h"
-#include "common_srv_library/iostream"
+#include "iostream"
 
-#include "common_srv_library/ROSUnit_Factory.hpp"
+#include "common_srv/ROSUnit_Factory.hpp"
 
 int main(int argc, char **argv)
 {

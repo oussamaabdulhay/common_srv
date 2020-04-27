@@ -1,4 +1,4 @@
-#include "common_srv_library/FloatMsg.hpp"
+#include "common_srv/FloatMsg.hpp"
 
 FloatMsg::FloatMsg()
 {

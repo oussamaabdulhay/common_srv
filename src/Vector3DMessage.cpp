@@ -1,4 +1,4 @@
-#include "common_srv_library/Vector3DMessage.hpp"
+#include "common_srv/Vector3DMessage.hpp"
 
 Vector3DMessage::Vector3DMessage() {
 }

@@ -1,4 +1,4 @@
-#include "common_srv_library/PoseMsg.hpp"
+#include "common_srv/PoseMsg.hpp"
 
 PoseMsg::PoseMsg()
 {

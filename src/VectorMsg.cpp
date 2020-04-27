@@ -1,4 +1,4 @@
-#include "common_srv_library/VectorMsg.hpp"
+#include "common_srv/VectorMsg.hpp"
 
 VectorMsg::VectorMsg()
 {

@@ -1,4 +1,4 @@
-#include "common_srv_library/ROSUnit_SetVectorSrv.hpp"
+#include "common_srv/ROSUnit_SetVectorSrv.hpp"
 
 ROSUnit_SetVectorSrv* ROSUnit_SetVectorSrv::m_ptr[ROSUnit_capacity];
 int ROSUnit_SetVectorSrv::internal_counter=0;

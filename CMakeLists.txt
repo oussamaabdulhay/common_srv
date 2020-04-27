@@ -38,8 +38,6 @@ generate_messages(
 )
 
 catkin_package(
-  INCLUDE_DIRS 
-  LIBRARIES
   CATKIN_DEPENDS
     roscpp
     std_msgs
