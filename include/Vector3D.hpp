@@ -1,6 +1,7 @@
 #pragma once 
 
 #include <cstdint>
+#include <math.h>
 
 template <class T>  
 
@@ -68,6 +69,13 @@ class Vector3D
                         tmp.z = M(this->z);
 
                         return tmp;
+                }
+                double operator ^ (Vector3D<T> tmp)
+                {
+                        return x*tmp.x + y*tmp.y + z*tmp.z;
+                }
+                static double getL2Norm(Vector3D<T> vec1){
+                    return sqrt(vec1.x*vec1.x+vec1.y*vec1.y+vec1.z*vec1.z);
                 }
 
 };
