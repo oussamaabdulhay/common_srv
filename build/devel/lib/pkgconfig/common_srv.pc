@@ -1,0 +1,8 @@
+prefix=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel
+
+Name: common_srv
+Description: Description of common_srv
+Version: 0.0.0
+Cflags: -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/include -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/include
+Libs: -L${prefix}/lib -lcommon_srv
+Requires: roscpp std_msgs
