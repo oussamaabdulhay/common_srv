@@ -8,7 +8,10 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel:$CMAKE_PREFIX_PATH"
-export PATH="/opt/ros/melodic/bin:/home/pedrohrpbs/.local/bin:/home/pedrohrpbs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-export PWD="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build"
+export LD_LIBRARY_PATH="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/lib:$LD_LIBRARY_PATH"
+export PATH='/opt/ros/melodic/bin:/home/pedrohrpbs/.local/bin:/home/pedrohrpbs/anaconda3/bin:/home/pedrohrpbs/anaconda3/condabin:/home/pedrohrpbs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PKG_CONFIG_PATH="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build'
+export PYTHONPATH="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv:$ROS_PACKAGE_PATH"
