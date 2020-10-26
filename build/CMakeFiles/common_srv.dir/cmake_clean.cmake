@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/common_srv.dir/src/Block.cpp.o"
   "CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o"
   "CMakeFiles/common_srv.dir/src/DataMessage.cpp.o"
   "CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o"
@@ -8,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o"
   "CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o"
   "CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o"
+  "CMakeFiles/common_srv.dir/src/Port.cpp.o"
   "CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o"
   "CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o"
   "CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o"

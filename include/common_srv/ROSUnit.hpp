@@ -6,9 +6,10 @@
 #include "common_srv/MsgReceiver.hpp"
 #include "common_srv/MsgEmitter.hpp"
 #include "common_srv/msg_types.hpp"
+#include "Block.hpp"
 
 const int ROSUnit_capacity=7;
-class ROSUnit : public MsgEmitter, public MsgReceiver{
+class ROSUnit : public MsgEmitter, public Block{
 
     private:
         ros::NodeHandle _main_handler;
@@ -19,6 +20,14 @@ class ROSUnit : public MsgEmitter, public MsgReceiver{
 
         ROSUnit(ros::NodeHandle&);
         ~ROSUnit();
+
+        //TODO Refactor below
+        block_id getID() {}
+        block_type getType() {}
+        void switchIn(DataMessage*) {}
+        DataMessage* switchOut() {}
+        DataMessage* runTask(DataMessage*) {}
+        void process(DataMessage* t_msg, Port* t_port) {}
     protected:
         
         

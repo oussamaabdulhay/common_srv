@@ -57,9 +57,33 @@ include CMakeFiles/common_srv.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/common_srv.dir/flags.make
 
+CMakeFiles/common_srv.dir/src/Block.cpp.o: CMakeFiles/common_srv.dir/flags.make
+CMakeFiles/common_srv.dir/src/Block.cpp.o: ../src/Block.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/common_srv.dir/src/Block.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/Block.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Block.cpp
+
+CMakeFiles/common_srv.dir/src/Block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common_srv.dir/src/Block.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Block.cpp > CMakeFiles/common_srv.dir/src/Block.cpp.i
+
+CMakeFiles/common_srv.dir/src/Block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common_srv.dir/src/Block.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Block.cpp -o CMakeFiles/common_srv.dir/src/Block.cpp.s
+
+CMakeFiles/common_srv.dir/src/Block.cpp.o.requires:
+
+.PHONY : CMakeFiles/common_srv.dir/src/Block.cpp.o.requires
+
+CMakeFiles/common_srv.dir/src/Block.cpp.o.provides: CMakeFiles/common_srv.dir/src/Block.cpp.o.requires
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Block.cpp.o.provides.build
+.PHONY : CMakeFiles/common_srv.dir/src/Block.cpp.o.provides
+
+CMakeFiles/common_srv.dir/src/Block.cpp.o.provides.build: CMakeFiles/common_srv.dir/src/Block.cpp.o
+
+
 CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o: ../src/BooleanMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/BooleanMsg.cpp
 
 CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o.provides.build: CMakeFiles/common
 
 CMakeFiles/common_srv.dir/src/DataMessage.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/DataMessage.cpp.o: ../src/DataMessage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/common_srv.dir/src/DataMessage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/common_srv.dir/src/DataMessage.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/DataMessage.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/DataMessage.cpp
 
 CMakeFiles/common_srv.dir/src/DataMessage.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/common_srv.dir/src/DataMessage.cpp.o.provides.build: CMakeFiles/commo
 
 CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o: ../src/DoubleMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/DoubleMsg.cpp
 
 CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o.provides.build: CMakeFiles/common_
 
 CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.o: ../src/EmptyMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/EmptyMsg.cpp
 
 CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/common_srv.dir/src/EmptyMsg.cpp.o.provides.build: CMakeFiles/common_s
 
 CMakeFiles/common_srv.dir/src/FloatMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/FloatMsg.cpp.o: ../src/FloatMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/common_srv.dir/src/FloatMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/common_srv.dir/src/FloatMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/FloatMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/FloatMsg.cpp
 
 CMakeFiles/common_srv.dir/src/FloatMsg.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/common_srv.dir/src/FloatMsg.cpp.o.provides.build: CMakeFiles/common_s
 
 CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o: ../src/IntegerMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/IntegerMsg.cpp
 
 CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o.provides.build: CMakeFiles/common
 
 CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o: ../src/MsgEmitter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/MsgEmitter.cpp
 
 CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o.provides.build: CMakeFiles/common
 
 CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o: ../src/MsgReceiver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/MsgReceiver.cpp
 
 CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o.provides.build: CMakeFiles/commo
 
 CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o: ../src/PointsMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/PointsMsg.cpp
 
 CMakeFiles/common_srv.dir/src/PointsMsg.cpp.i: cmake_force
@@ -273,9 +297,33 @@ CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o.provides: CMakeFiles/common_srv.di
 CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o.provides.build: CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o
 
 
+CMakeFiles/common_srv.dir/src/Port.cpp.o: CMakeFiles/common_srv.dir/flags.make
+CMakeFiles/common_srv.dir/src/Port.cpp.o: ../src/Port.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/common_srv.dir/src/Port.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/Port.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Port.cpp
+
+CMakeFiles/common_srv.dir/src/Port.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common_srv.dir/src/Port.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Port.cpp > CMakeFiles/common_srv.dir/src/Port.cpp.i
+
+CMakeFiles/common_srv.dir/src/Port.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common_srv.dir/src/Port.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Port.cpp -o CMakeFiles/common_srv.dir/src/Port.cpp.s
+
+CMakeFiles/common_srv.dir/src/Port.cpp.o.requires:
+
+.PHONY : CMakeFiles/common_srv.dir/src/Port.cpp.o.requires
+
+CMakeFiles/common_srv.dir/src/Port.cpp.o.provides: CMakeFiles/common_srv.dir/src/Port.cpp.o.requires
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Port.cpp.o.provides.build
+.PHONY : CMakeFiles/common_srv.dir/src/Port.cpp.o.provides
+
+CMakeFiles/common_srv.dir/src/Port.cpp.o.provides.build: CMakeFiles/common_srv.dir/src/Port.cpp.o
+
+
 CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o: ../src/PoseMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/PoseMsg.cpp
 
 CMakeFiles/common_srv.dir/src/PoseMsg.cpp.i: cmake_force
@@ -299,7 +347,7 @@ CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o.provides.build: CMakeFiles/common_sr
 
 CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o: ../src/PosesMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/PosesMsg.cpp
 
 CMakeFiles/common_srv.dir/src/PosesMsg.cpp.i: cmake_force
@@ -323,7 +371,7 @@ CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o.provides.build: CMakeFiles/common_s
 
 CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o: ../src/ROSUnit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit.cpp.i: cmake_force
@@ -347,7 +395,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o.provides.build: CMakeFiles/common_sr
 
 CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.o: ../src/ROSUnit_EmptyClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_EmptyClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.i: cmake_force
@@ -371,7 +419,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_EmptyClnt.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.o: ../src/ROSUnit_EmptySrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_EmptySrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.i: cmake_force
@@ -395,7 +443,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_EmptySrv.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.o: ../src/ROSUnit_Factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_Factory.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.i: cmake_force
@@ -419,7 +467,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_Factory.cpp.o.provides.build: CMakeFiles/c
 
 CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.o: ../src/ROSUnit_FloatPub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_FloatPub.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.i: cmake_force
@@ -443,7 +491,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_FloatPub.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.o: ../src/ROSUnit_FloatSub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_FloatSub.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.i: cmake_force
@@ -467,7 +515,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_FloatSub.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.o: ../src/ROSUnit_Point2DPub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_Point2DPub.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.i: cmake_force
@@ -491,7 +539,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_Point2DPub.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.o: ../src/ROSUnit_Point2DSub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_Point2DSub.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.i: cmake_force
@@ -515,7 +563,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_Point2DSub.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.o: ../src/ROSUnit_PointPub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_PointPub.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.i: cmake_force
@@ -539,7 +587,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_PointPub.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.o: ../src/ROSUnit_PointSub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_PointSub.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.i: cmake_force
@@ -563,7 +611,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_PointSub.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.o: ../src/ROSUnit_SetFloatClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetFloatClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.i: cmake_force
@@ -587,7 +635,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatClnt.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.o: ../src/ROSUnit_SetFloatSrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetFloatSrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.i: cmake_force
@@ -611,7 +659,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetFloatSrv.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.o: ../src/ROSUnit_SetIntClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetIntClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.i: cmake_force
@@ -635,7 +683,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetIntClnt.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.o: ../src/ROSUnit_SetIntSrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetIntSrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.i: cmake_force
@@ -659,7 +707,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetIntSrv.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.o: ../src/ROSUnit_SetPointClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPointClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.i: cmake_force
@@ -683,7 +731,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPointClnt.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.o: ../src/ROSUnit_SetPointSrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPointSrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.i: cmake_force
@@ -707,7 +755,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPointSrv.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.o: ../src/ROSUnit_SetPointsClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPointsClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.i: cmake_force
@@ -731,7 +779,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsClnt.cpp.o.provides.build: CMakeF
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.o: ../src/ROSUnit_SetPointsSrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPointsSrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.i: cmake_force
@@ -755,7 +803,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPointsSrv.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.o: ../src/ROSUnit_SetPoseClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPoseClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.i: cmake_force
@@ -779,7 +827,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseClnt.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.o: ../src/ROSUnit_SetPoseSrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPoseSrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.i: cmake_force
@@ -803,7 +851,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPoseSrv.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.o: ../src/ROSUnit_SetPosesClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPosesClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.i: cmake_force
@@ -827,7 +875,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesClnt.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.o: ../src/ROSUnit_SetPosesSrv\ .cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.o -c "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetPosesSrv .cpp"
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.i: cmake_force
@@ -851,7 +899,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetPosesSrv_.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.o: ../src/ROSUnit_SetVectorClnt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetVectorClnt.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.i: cmake_force
@@ -875,7 +923,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorClnt.cpp.o.provides.build: CMakeF
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.o: ../src/ROSUnit_SetVectorSrv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/ROSUnit_SetVectorSrv.cpp
 
 CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.i: cmake_force
@@ -899,7 +947,7 @@ CMakeFiles/common_srv.dir/src/ROSUnit_SetVectorSrv.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.o: ../src/TaggedPosesMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/TaggedPosesMsg.cpp
 
 CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.i: cmake_force
@@ -923,7 +971,7 @@ CMakeFiles/common_srv.dir/src/TaggedPosesMsg.cpp.o.provides.build: CMakeFiles/co
 
 CMakeFiles/common_srv.dir/src/Timer.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/Timer.cpp.o: ../src/Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/common_srv.dir/src/Timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/common_srv.dir/src/Timer.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/Timer.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Timer.cpp
 
 CMakeFiles/common_srv.dir/src/Timer.cpp.i: cmake_force
@@ -947,7 +995,7 @@ CMakeFiles/common_srv.dir/src/Timer.cpp.o.provides.build: CMakeFiles/common_srv.
 
 CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.o: ../src/Vector2DMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Vector2DMsg.cpp
 
 CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.i: cmake_force
@@ -971,7 +1019,7 @@ CMakeFiles/common_srv.dir/src/Vector2DMsg.cpp.o.provides.build: CMakeFiles/commo
 
 CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.o: ../src/Vector3DMessage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/Vector3DMessage.cpp
 
 CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.i: cmake_force
@@ -995,7 +1043,7 @@ CMakeFiles/common_srv.dir/src/Vector3DMessage.cpp.o.provides.build: CMakeFiles/c
 
 CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.o: ../src/VectorDoubleMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/VectorDoubleMsg.cpp
 
 CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.i: cmake_force
@@ -1019,7 +1067,7 @@ CMakeFiles/common_srv.dir/src/VectorDoubleMsg.cpp.o.provides.build: CMakeFiles/c
 
 CMakeFiles/common_srv.dir/src/VectorMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/VectorMsg.cpp.o: ../src/VectorMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/common_srv.dir/src/VectorMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/common_srv.dir/src/VectorMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/VectorMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/VectorMsg.cpp
 
 CMakeFiles/common_srv.dir/src/VectorMsg.cpp.i: cmake_force
@@ -1043,7 +1091,7 @@ CMakeFiles/common_srv.dir/src/VectorMsg.cpp.o.provides.build: CMakeFiles/common_
 
 CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.o: ../src/filterPointMsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/filterPointMsg.cpp
 
 CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.i: cmake_force
@@ -1067,7 +1115,7 @@ CMakeFiles/common_srv.dir/src/filterPointMsg.cpp.o.provides.build: CMakeFiles/co
 
 CMakeFiles/common_srv.dir/src/main.cpp.o: CMakeFiles/common_srv.dir/flags.make
 CMakeFiles/common_srv.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/common_srv.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/common_srv.dir/src/main.cpp.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common_srv.dir/src/main.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/main.cpp
 
 CMakeFiles/common_srv.dir/src/main.cpp.i: cmake_force
@@ -1091,6 +1139,7 @@ CMakeFiles/common_srv.dir/src/main.cpp.o.provides.build: CMakeFiles/common_srv.d
 
 # Object files for target common_srv
 common_srv_OBJECTS = \
+"CMakeFiles/common_srv.dir/src/Block.cpp.o" \
 "CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o" \
 "CMakeFiles/common_srv.dir/src/DataMessage.cpp.o" \
 "CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o" \
@@ -1100,6 +1149,7 @@ common_srv_OBJECTS = \
 "CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o" \
 "CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o" \
 "CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o" \
+"CMakeFiles/common_srv.dir/src/Port.cpp.o" \
 "CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o" \
 "CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o" \
 "CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o" \
@@ -1138,6 +1188,7 @@ common_srv_OBJECTS = \
 # External object files for target common_srv
 common_srv_EXTERNAL_OBJECTS =
 
+devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/Block.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/DataMessage.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o
@@ -1147,6 +1198,7 @@ devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o
+devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/Port.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o
@@ -1201,7 +1253,7 @@ devel/lib/libcommon_srv.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libcommon_srv.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/libcommon_srv.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 devel/lib/libcommon_srv.so: CMakeFiles/common_srv.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX shared library devel/lib/libcommon_srv.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX shared library devel/lib/libcommon_srv.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/common_srv.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1209,6 +1261,7 @@ CMakeFiles/common_srv.dir/build: devel/lib/libcommon_srv.so
 
 .PHONY : CMakeFiles/common_srv.dir/build
 
+CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/Block.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/BooleanMsg.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/DataMessage.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/DoubleMsg.cpp.o.requires
@@ -1218,6 +1271,7 @@ CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/IntegerMsg.cpp
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/MsgEmitter.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/PointsMsg.cpp.o.requires
+CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/Port.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/PoseMsg.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/PosesMsg.cpp.o.requires
 CMakeFiles/common_srv.dir/requires: CMakeFiles/common_srv.dir/src/ROSUnit.cpp.o.requires

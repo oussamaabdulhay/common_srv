@@ -856,6 +856,33 @@ gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/Block.o: src/Block.cpp.o
+
+.PHONY : src/Block.o
+
+# target to build an object file
+src/Block.cpp.o:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Block.cpp.o
+.PHONY : src/Block.cpp.o
+
+src/Block.i: src/Block.cpp.i
+
+.PHONY : src/Block.i
+
+# target to preprocess a source file
+src/Block.cpp.i:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Block.cpp.i
+.PHONY : src/Block.cpp.i
+
+src/Block.s: src/Block.cpp.s
+
+.PHONY : src/Block.s
+
+# target to generate assembly for a file
+src/Block.cpp.s:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Block.cpp.s
+.PHONY : src/Block.cpp.s
+
 src/BooleanMsg.o: src/BooleanMsg.cpp.o
 
 .PHONY : src/BooleanMsg.o
@@ -1098,6 +1125,33 @@ src/PointsMsg.s: src/PointsMsg.cpp.s
 src/PointsMsg.cpp.s:
 	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/PointsMsg.cpp.s
 .PHONY : src/PointsMsg.cpp.s
+
+src/Port.o: src/Port.cpp.o
+
+.PHONY : src/Port.o
+
+# target to build an object file
+src/Port.cpp.o:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Port.cpp.o
+.PHONY : src/Port.cpp.o
+
+src/Port.i: src/Port.cpp.i
+
+.PHONY : src/Port.i
+
+# target to preprocess a source file
+src/Port.cpp.i:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Port.cpp.i
+.PHONY : src/Port.cpp.i
+
+src/Port.s: src/Port.cpp.s
+
+.PHONY : src/Port.s
+
+# target to generate assembly for a file
+src/Port.cpp.s:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/Port.cpp.s
+.PHONY : src/Port.cpp.s
 
 src/PoseMsg.o: src/PoseMsg.cpp.o
 
@@ -2083,6 +2137,9 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/Block.o"
+	@echo "... src/Block.i"
+	@echo "... src/Block.s"
 	@echo "... src/BooleanMsg.o"
 	@echo "... src/BooleanMsg.i"
 	@echo "... src/BooleanMsg.s"
@@ -2110,6 +2167,9 @@ help:
 	@echo "... src/PointsMsg.o"
 	@echo "... src/PointsMsg.i"
 	@echo "... src/PointsMsg.s"
+	@echo "... src/Port.o"
+	@echo "... src/Port.i"
+	@echo "... src/Port.s"
 	@echo "... src/PoseMsg.o"
 	@echo "... src/PoseMsg.i"
 	@echo "... src/PoseMsg.s"
