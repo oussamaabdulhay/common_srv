@@ -28,6 +28,8 @@ class ROSUnit : public MsgEmitter, public Block{
         DataMessage* switchOut() {}
         DataMessage* runTask(DataMessage*) {}
         void process(DataMessage* t_msg, Port* t_port) {}
+        std::vector<Port*> getPorts() {}
+        
     protected:
         
         
