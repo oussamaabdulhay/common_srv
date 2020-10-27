@@ -7,6 +7,8 @@
 #include "common_srv/MsgEmitter.hpp"
 #include "common_srv/msg_types.hpp"
 #include "Block.hpp"
+#include "common_srv/InputPort.hpp"
+#include "common_srv/OutputPort.hpp"
 
 const int ROSUnit_capacity=7;
 class ROSUnit : public MsgEmitter, public Block{
@@ -16,7 +18,7 @@ class ROSUnit : public MsgEmitter, public Block{
 
     public:
         ros::NodeHandle getNodeHandle();
-        virtual void receiveMsgData(DataMessage* t_msg) = 0;
+        void receiveMsgData(DataMessage* t_msg);
 
         ROSUnit(ros::NodeHandle&);
         ~ROSUnit();

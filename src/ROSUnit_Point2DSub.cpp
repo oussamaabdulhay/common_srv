@@ -11,6 +11,14 @@ void(*ROSUnit_Point2DSub::callbackFunctionPointer[ROSUnit_capacity])(const commo
   ROSUnit_Point2DSub::callback5
 };
 
+Port* ROSUnit_Point2DSub::_output_port_0;
+Port* ROSUnit_Point2DSub::_output_port_1;
+Port* ROSUnit_Point2DSub::_output_port_2;
+Port* ROSUnit_Point2DSub::_output_port_3;
+Port* ROSUnit_Point2DSub::_output_port_4;
+std::vector<Port*> ROSUnit_Point2DSub::_ports{_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
+
+
 ROSUnit_Point2DSub::ROSUnit_Point2DSub(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
     m_sub = t_main_handler.subscribe(t_name, 2, ROSUnit_Point2DSub::callbackFunctionPointer[internal_counter]);
@@ -29,7 +37,8 @@ void ROSUnit_Point2DSub::callback1(const common_srv::Point2D::ConstPtr& t_rec)
     Vector2DMsg t_msg;
     t_msg.data.x = t_rec->x;
     t_msg.data.y = t_rec->y;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_0->receiveMsgData(&t_msg);
+    //m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_Point2DSub::callback2(const common_srv::Point2D::ConstPtr& t_rec)
@@ -38,7 +47,8 @@ void ROSUnit_Point2DSub::callback2(const common_srv::Point2D::ConstPtr& t_rec)
     Vector2DMsg t_msg;
     t_msg.data.x = t_rec->x;
     t_msg.data.y = t_rec->y;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_1->receiveMsgData(&t_msg);
+    //m_ptr[1]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_Point2DSub::callback3(const common_srv::Point2D::ConstPtr& t_rec)
@@ -47,7 +57,8 @@ void ROSUnit_Point2DSub::callback3(const common_srv::Point2D::ConstPtr& t_rec)
     Vector2DMsg t_msg;
     t_msg.data.x = t_rec->x;
     t_msg.data.y = t_rec->y;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_2->receiveMsgData(&t_msg);
+    //m_ptr[2]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_Point2DSub::callback4(const common_srv::Point2D::ConstPtr& t_rec)
@@ -56,7 +67,8 @@ void ROSUnit_Point2DSub::callback4(const common_srv::Point2D::ConstPtr& t_rec)
     Vector2DMsg t_msg;
     t_msg.data.x = t_rec->x;
     t_msg.data.y = t_rec->y;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_3->receiveMsgData(&t_msg);
+    //m_ptr[3]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_Point2DSub::callback5(const common_srv::Point2D::ConstPtr& t_rec)
@@ -65,5 +77,6 @@ void ROSUnit_Point2DSub::callback5(const common_srv::Point2D::ConstPtr& t_rec)
     Vector2DMsg t_msg;
     t_msg.data.x = t_rec->x;
     t_msg.data.y = t_rec->y;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_4->receiveMsgData(&t_msg);
+    //m_ptr[4]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }

@@ -11,6 +11,13 @@ void(*ROSUnit_FloatSub::callbackFunctionPointer[ROSUnit_capacity])(const std_msg
   ROSUnit_FloatSub::callback5
 };
 
+Port* ROSUnit_FloatSub::_output_port_0;
+Port* ROSUnit_FloatSub::_output_port_1;
+Port* ROSUnit_FloatSub::_output_port_2;
+Port* ROSUnit_FloatSub::_output_port_3;
+Port* ROSUnit_FloatSub::_output_port_4;
+std::vector<Port*> ROSUnit_FloatSub::_ports{_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
+
 ROSUnit_FloatSub::ROSUnit_FloatSub(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
     m_sub = t_main_handler.subscribe(t_name, 1, ROSUnit_FloatSub::callbackFunctionPointer[internal_counter]);
@@ -28,7 +35,8 @@ void ROSUnit_FloatSub::callback1(const std_msgs::Float32::ConstPtr& t_rec)
     //Change the below code to match the message you want to emit
     FloatMsg t_msg;
     t_msg.data = t_rec->data;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_0->receiveMsgData(&t_msg);
+    //m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_FloatSub::callback2(const std_msgs::Float32::ConstPtr& t_rec)
@@ -36,7 +44,8 @@ void ROSUnit_FloatSub::callback2(const std_msgs::Float32::ConstPtr& t_rec)
     //Change the below code to match the message you want to emit
     FloatMsg t_msg;
     t_msg.data = t_rec->data;
-    m_ptr[1]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_1->receiveMsgData(&t_msg);
+    //m_ptr[1]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_FloatSub::callback3(const std_msgs::Float32::ConstPtr& t_rec)
@@ -44,7 +53,8 @@ void ROSUnit_FloatSub::callback3(const std_msgs::Float32::ConstPtr& t_rec)
     //Change the below code to match the message you want to emit
     FloatMsg t_msg;
     t_msg.data = t_rec->data;
-    m_ptr[2]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_2->receiveMsgData(&t_msg);
+    //m_ptr[2]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_FloatSub::callback4(const std_msgs::Float32::ConstPtr& t_rec)
@@ -52,7 +62,8 @@ void ROSUnit_FloatSub::callback4(const std_msgs::Float32::ConstPtr& t_rec)
     //Change the below code to match the message you want to emit
     FloatMsg t_msg;
     t_msg.data = t_rec->data;
-    m_ptr[3]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_3->receiveMsgData(&t_msg);
+    //m_ptr[3]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }
 
 void ROSUnit_FloatSub::callback5(const std_msgs::Float32::ConstPtr& t_rec)
@@ -60,5 +71,6 @@ void ROSUnit_FloatSub::callback5(const std_msgs::Float32::ConstPtr& t_rec)
     //Change the below code to match the message you want to emit
     FloatMsg t_msg;
     t_msg.data = t_rec->data;
-    m_ptr[4]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_4->receiveMsgData(&t_msg);
+    //m_ptr[4]->emitMsgUnicastDefault((DataMessage*) &t_msg);
 }

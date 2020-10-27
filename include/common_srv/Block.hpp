@@ -6,6 +6,7 @@ class Block;
 #include "common_srv/DataMessage.hpp"
 #include "common_srv/MsgReceiver.hpp"
 
+
 class Block : public MsgReceiver{   //TODO remove MsgReceiver once the code is fully refactored
 
     public:

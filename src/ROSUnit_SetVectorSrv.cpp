@@ -12,6 +12,13 @@ bool(*ROSUnit_SetVectorSrv::callbackFunctionPointer[ROSUnit_capacity])(common_sr
   ROSUnit_SetVectorSrv::srv_callback5
 };
 
+Port* ROSUnit_SetVectorSrv::_output_port_0;
+Port* ROSUnit_SetVectorSrv::_output_port_1;
+Port* ROSUnit_SetVectorSrv::_output_port_2;
+Port* ROSUnit_SetVectorSrv::_output_port_3;
+Port* ROSUnit_SetVectorSrv::_output_port_4;
+std::vector<Port*> ROSUnit_SetVectorSrv::_ports{_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
+
 ROSUnit_SetVectorSrv::ROSUnit_SetVectorSrv(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
     m_server = t_main_handler.advertiseService(t_name, ROSUnit_SetVectorSrv::callbackFunctionPointer[internal_counter]);
@@ -34,7 +41,8 @@ bool ROSUnit_SetVectorSrv::srv_callback1(common_srv::set_vector::Request& req, c
     t_msg.p2.x = req.p2.x;
     t_msg.p2.y = req.p2.y;
     t_msg.p2.z = req.p2.z;
-    m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_0->receiveMsgData(&t_msg);
+    //m_ptr[0]->emitMsgUnicastDefault((DataMessage*) &t_msg);
     return true;
 }
 
@@ -48,7 +56,8 @@ bool ROSUnit_SetVectorSrv::srv_callback2(common_srv::set_vector::Request& req, c
     t_msg.p2.x = req.p2.x;
     t_msg.p2.y = req.p2.y;
     t_msg.p2.z = req.p2.z;
-    m_ptr[1]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_1->receiveMsgData(&t_msg);
+    //m_ptr[1]->emitMsgUnicastDefault((DataMessage*) &t_msg);
     return true;
 }
 
@@ -62,7 +71,8 @@ bool ROSUnit_SetVectorSrv::srv_callback3(common_srv::set_vector::Request& req, c
     t_msg.p2.x = req.p2.x;
     t_msg.p2.y = req.p2.y;
     t_msg.p2.z = req.p2.z;
-    m_ptr[2]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_2->receiveMsgData(&t_msg);
+    //m_ptr[2]->emitMsgUnicastDefault((DataMessage*) &t_msg);
     return true;
 }
 
@@ -76,7 +86,8 @@ bool ROSUnit_SetVectorSrv::srv_callback4(common_srv::set_vector::Request& req, c
     t_msg.p2.x = req.p2.x;
     t_msg.p2.y = req.p2.y;
     t_msg.p2.z = req.p2.z;
-    m_ptr[3]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_3->receiveMsgData(&t_msg);
+    //m_ptr[3]->emitMsgUnicastDefault((DataMessage*) &t_msg);
     return true;
 }
 
@@ -90,6 +101,7 @@ bool ROSUnit_SetVectorSrv::srv_callback5(common_srv::set_vector::Request& req, c
     t_msg.p2.x = req.p2.x;
     t_msg.p2.y = req.p2.y;
     t_msg.p2.z = req.p2.z;
-    m_ptr[4]->emitMsgUnicastDefault((DataMessage*) &t_msg);
+    _output_port_4->receiveMsgData(&t_msg);
+    //m_ptr[4]->emitMsgUnicastDefault((DataMessage*) &t_msg);
     return true;
 }
