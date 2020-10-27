@@ -12,3 +12,7 @@ Port::~Port() {
 int Port::getID(){
     return _id;
 }
+
+void Port::connect(Port* t_input_port){
+    this->addCallbackMsgReceiver((MsgReceiver*) t_input_port);
+}
