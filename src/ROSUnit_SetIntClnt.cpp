@@ -29,23 +29,3 @@ void ROSUnit_SetIntClnt::process(DataMessage* t_msg, Port* t_port) {
         }
     }
 }
-
-
-// void ROSUnit_SetIntClnt::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::INTEGER)
-//     {
-//         common_srv::set_int t_srv;
-//         IntegerMsg* t_vector = (IntegerMsg*) t_msg;
-//         t_srv.request.data = t_vector->data;
-//         if(m_client.call(t_srv))
-//         {
-//             //TODO: add success condition
-//         }
-//         else
-//         {
-//             //TODO: add error
-//         }
-//     }
-// }

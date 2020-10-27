@@ -23,16 +23,3 @@ void ROSUnit_Point2DPub::process(DataMessage* t_msg, Port* t_port) {
         m_pub.publish(t_point);
     }
 }
-
-// void ROSUnit_Point2DPub::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::VECTOR2D)
-//     {
-//         Vector2DMsg* t_vec = (Vector2DMsg*) t_msg;
-//         common_srv::Point2D t_point;
-//         t_point.x = t_vec->data.x;
-//         t_point.y = t_vec->data.y;
-//         m_pub.publish(t_point);
-//     }
-// }

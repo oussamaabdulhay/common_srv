@@ -10,10 +10,8 @@ class ROSUnit_SetPoseSrv : public ROSUnit
 public:
     enum ports_id {OP_0, OP_1, OP_2, OP_3, OP_4};
     void process(DataMessage* t_msg, Port* t_port) {};
-    std::vector<Port*> getPorts() {return _ports;}
     ROSUnit_SetPoseSrv(std::string, ros::NodeHandle&);
     ~ROSUnit_SetPoseSrv();
-    void receiveMsgData(DataMessage* t_msg){};
 
 private:
     static Port* _output_port_0;

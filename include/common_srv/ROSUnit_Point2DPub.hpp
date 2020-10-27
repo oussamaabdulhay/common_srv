@@ -11,11 +11,9 @@ class ROSUnit_Point2DPub : public ROSUnit
 
         enum ports_id {IP_0};
         void process(DataMessage* t_msg, Port* t_port);
-        std::vector<Port*> getPorts() {return _ports;};
         ROSUnit_Point2DPub(std::string, ros::NodeHandle&);
         ~ROSUnit_Point2DPub();
         //Change the receiveMsgData code to reflect your system
-        void receiveMsgData(DataMessage* t_msg);
 
     private:
 

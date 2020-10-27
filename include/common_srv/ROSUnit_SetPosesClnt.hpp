@@ -11,11 +11,8 @@ class ROSUnit_SetPosesClnt : public ROSUnit
     public:
         enum ports_id {IP_0};
         void process(DataMessage* t_msg, Port* t_port);
-        std::vector<Port*> getPorts() {return _ports;};
         ROSUnit_SetPosesClnt(std::string, ros::NodeHandle&);
         ~ROSUnit_SetPosesClnt();
-        //Change the receiveMsgData code to reflect your system
-        void receiveMsgData(DataMessage* t_msg);
 
     private:
         Port* _input_port_0;

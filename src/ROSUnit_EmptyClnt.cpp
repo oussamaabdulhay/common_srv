@@ -25,16 +25,3 @@ void ROSUnit_EmptyClnt::process(DataMessage* t_msg, Port* t_port) {
         }
     }
 }
-
-std::vector<Port*> ROSUnit_EmptyClnt::getPorts() {
-    return _ports;
-}
-
-// void ROSUnit_EmptyClnt::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::EMPTY)
-//     {
-        
-//     }
-// }

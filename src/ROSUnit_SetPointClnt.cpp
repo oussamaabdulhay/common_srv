@@ -31,25 +31,3 @@ void ROSUnit_SetPointClnt::process(DataMessage* t_msg, Port* t_port) {
         }
     }
 }
-
-// void ROSUnit_SetPointClnt::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::VECTOR3D)
-//     {
-//         common_srv::set_point t_srv;
-//         Vector3DMessage* t_vector = (Vector3DMessage*) t_msg;
-//         t_srv.request.p.x = t_vector->getData().x;
-//         t_srv.request.p.y = t_vector->getData().y;
-//         t_srv.request.p.z = t_vector->getData().z;
-//         if(m_client.call(t_srv))
-//         {
-//             //TODO: add success condition
-//         }
-//         else
-//         {
-//             //TODO: add error
-//         }
-        
-//     }
-// }

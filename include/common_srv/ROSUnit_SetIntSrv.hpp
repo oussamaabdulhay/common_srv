@@ -12,10 +12,8 @@ class ROSUnit_SetIntSrv : public ROSUnit
                         OP_5, OP_6, OP_7, OP_8, OP_9,
                         OP_10, OP_11, OP_12, OP_13, OP_14};
         void process(DataMessage* t_msg, Port* t_port) {};
-        std::vector<Port*> getPorts() {return _ports;}
         ROSUnit_SetIntSrv(std::string, ros::NodeHandle&);
         ~ROSUnit_SetIntSrv();
-        void receiveMsgData(DataMessage* t_msg) {};
 
     private:
     

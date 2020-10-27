@@ -10,11 +10,8 @@ class ROSUnit_SetIntClnt : public ROSUnit
     public:
         enum ports_id {IP_0};
         void process(DataMessage* t_msg, Port* t_port);
-        std::vector<Port*> getPorts() {return _ports;};
         ROSUnit_SetIntClnt(std::string, ros::NodeHandle&);
         ~ROSUnit_SetIntClnt();
-        //Change the receiveMsgData code to reflect your system
-        void receiveMsgData(DataMessage* t_msg);
 
     private:
         Port* _input_port_0;

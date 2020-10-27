@@ -13,7 +13,6 @@ class ROSUnit_EmptySrv : public ROSUnit
         ~ROSUnit_EmptySrv();
         //void receiveMsgData(DataMessage* t_msg) {};
         void process(DataMessage* t_msg, Port* t_port) {};
-        std::vector<Port*> getPorts() {return _ports;}
 
     private:
 
@@ -22,7 +21,6 @@ class ROSUnit_EmptySrv : public ROSUnit
     static Port* _output_port_2;
     static Port* _output_port_3;
     static Port* _output_port_4;
-    static std::vector<Port*> _ports;
 
     ros::ServiceServer m_server;
     static int internal_counter;
