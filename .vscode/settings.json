@@ -55,5 +55,9 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "string": "cpp"
-    }
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/pedrohrpbs/catkin_ws_NAVIO/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ]
 }

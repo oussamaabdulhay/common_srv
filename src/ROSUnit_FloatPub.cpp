@@ -1,4 +1,4 @@
-#include "ROSUnit_FloatPub.hpp"
+#include "common_srv/ROSUnit_FloatPub.hpp"
 
 ROSUnit_FloatPub::ROSUnit_FloatPub(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
@@ -10,7 +10,7 @@ ROSUnit_FloatPub::~ROSUnit_FloatPub()
 
 }
 
-void ROSUnit_FloatPub::receive_msg_data(DataMessage* t_msg)
+void ROSUnit_FloatPub::receiveMsgData(DataMessage* t_msg)
 {
     //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::FLOAT)

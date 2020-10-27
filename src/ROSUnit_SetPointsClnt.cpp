@@ -1,4 +1,4 @@
-#include "ROSUnit_SetPointsClnt.hpp"
+#include "common_srv/ROSUnit_SetPointsClnt.hpp"
 
 ROSUnit_SetPointsClnt::ROSUnit_SetPointsClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
@@ -10,7 +10,7 @@ ROSUnit_SetPointsClnt::~ROSUnit_SetPointsClnt()
 
 }
 
-void ROSUnit_SetPointsClnt::receive_msg_data(DataMessage* t_msg)
+void ROSUnit_SetPointsClnt::receiveMsgData(DataMessage* t_msg)
 {
     //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::POINTS)

@@ -1,4 +1,4 @@
-#include "PointsMsg.hpp"
+#include "common_srv/PointsMsg.hpp"
 
 PointsMsg::PointsMsg()
 {

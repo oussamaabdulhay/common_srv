@@ -1,4 +1,4 @@
-#include "ROSUnit_SetPoseClnt.hpp"
+#include "common_srv/ROSUnit_SetPoseClnt.hpp"
 
 ROSUnit_SetPoseClnt::ROSUnit_SetPoseClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
@@ -10,7 +10,7 @@ ROSUnit_SetPoseClnt::~ROSUnit_SetPoseClnt()
 
 }
 
-void ROSUnit_SetPoseClnt::receive_msg_data(DataMessage* t_msg)
+void ROSUnit_SetPoseClnt::receiveMsgData(DataMessage* t_msg)
 {
     //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::POSE)

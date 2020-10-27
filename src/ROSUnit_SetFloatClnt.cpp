@@ -1,4 +1,4 @@
-#include "ROSUnit_SetFloatClnt.hpp"
+#include "common_srv/ROSUnit_SetFloatClnt.hpp"
 
 ROSUnit_SetFloatClnt::ROSUnit_SetFloatClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
@@ -10,7 +10,7 @@ ROSUnit_SetFloatClnt::~ROSUnit_SetFloatClnt()
 
 }
 
-void ROSUnit_SetFloatClnt::receive_msg_data(DataMessage* t_msg)
+void ROSUnit_SetFloatClnt::receiveMsgData(DataMessage* t_msg)
 {
     //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::FLOAT)

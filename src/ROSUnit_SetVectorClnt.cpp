@@ -1,4 +1,4 @@
-#include "ROSUnit_SetVectorClnt.hpp"
+#include "common_srv/ROSUnit_SetVectorClnt.hpp"
 
 ROSUnit_SetVectorClnt::ROSUnit_SetVectorClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
@@ -10,7 +10,7 @@ ROSUnit_SetVectorClnt::~ROSUnit_SetVectorClnt()
 
 }
 
-void ROSUnit_SetVectorClnt::receive_msg_data(DataMessage* t_msg)
+void ROSUnit_SetVectorClnt::receiveMsgData(DataMessage* t_msg)
 {
     //Change the below code to match your received msg
     if(t_msg->getType() == msg_type::VECTOR)
