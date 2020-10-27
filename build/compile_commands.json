@@ -31,6 +31,11 @@
 },
 {
   "directory": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"common_srv\\\" -Dcommon_srv_EXPORTS -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/include -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o CMakeFiles/common_srv.dir/src/InputPort.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/InputPort.cpp",
+  "file": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/InputPort.cpp"
+},
+{
+  "directory": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"common_srv\\\" -Dcommon_srv_EXPORTS -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/include -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o CMakeFiles/common_srv.dir/src/IntegerMsg.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/IntegerMsg.cpp",
   "file": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/IntegerMsg.cpp"
 },
@@ -43,6 +48,11 @@
   "directory": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"common_srv\\\" -Dcommon_srv_EXPORTS -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/include -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/MsgReceiver.cpp",
   "file": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/MsgReceiver.cpp"
+},
+{
+  "directory": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"common_srv\\\" -Dcommon_srv_EXPORTS -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build/devel/include -I/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o CMakeFiles/common_srv.dir/src/OutputPort.cpp.o -c /home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/OutputPort.cpp",
+  "file": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/src/OutputPort.cpp"
 },
 {
   "directory": "/home/pedrohrpbs/catkin_ws_NAVIO/src/common_srv/build",

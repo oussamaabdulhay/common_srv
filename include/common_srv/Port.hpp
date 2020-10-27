@@ -15,6 +15,7 @@ public:
     virtual void receiveMsgData(DataMessage* t_msg) = 0;
     virtual void receiveMsgData(DataMessage* t_msg, int channel_id) = 0;
     int getID();
+    void connect(Port*);
     Port(int t_id, Block* t_block);
     ~Port();
 };

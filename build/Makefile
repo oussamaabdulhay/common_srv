@@ -1018,6 +1018,33 @@ src/FloatMsg.cpp.s:
 	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/FloatMsg.cpp.s
 .PHONY : src/FloatMsg.cpp.s
 
+src/InputPort.o: src/InputPort.cpp.o
+
+.PHONY : src/InputPort.o
+
+# target to build an object file
+src/InputPort.cpp.o:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/InputPort.cpp.o
+.PHONY : src/InputPort.cpp.o
+
+src/InputPort.i: src/InputPort.cpp.i
+
+.PHONY : src/InputPort.i
+
+# target to preprocess a source file
+src/InputPort.cpp.i:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/InputPort.cpp.i
+.PHONY : src/InputPort.cpp.i
+
+src/InputPort.s: src/InputPort.cpp.s
+
+.PHONY : src/InputPort.s
+
+# target to generate assembly for a file
+src/InputPort.cpp.s:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/InputPort.cpp.s
+.PHONY : src/InputPort.cpp.s
+
 src/IntegerMsg.o: src/IntegerMsg.cpp.o
 
 .PHONY : src/IntegerMsg.o
@@ -1098,6 +1125,33 @@ src/MsgReceiver.s: src/MsgReceiver.cpp.s
 src/MsgReceiver.cpp.s:
 	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/MsgReceiver.cpp.s
 .PHONY : src/MsgReceiver.cpp.s
+
+src/OutputPort.o: src/OutputPort.cpp.o
+
+.PHONY : src/OutputPort.o
+
+# target to build an object file
+src/OutputPort.cpp.o:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/OutputPort.cpp.o
+.PHONY : src/OutputPort.cpp.o
+
+src/OutputPort.i: src/OutputPort.cpp.i
+
+.PHONY : src/OutputPort.i
+
+# target to preprocess a source file
+src/OutputPort.cpp.i:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/OutputPort.cpp.i
+.PHONY : src/OutputPort.cpp.i
+
+src/OutputPort.s: src/OutputPort.cpp.s
+
+.PHONY : src/OutputPort.s
+
+# target to generate assembly for a file
+src/OutputPort.cpp.s:
+	$(MAKE) -f CMakeFiles/common_srv.dir/build.make CMakeFiles/common_srv.dir/src/OutputPort.cpp.s
+.PHONY : src/OutputPort.cpp.s
 
 src/PointsMsg.o: src/PointsMsg.cpp.o
 
@@ -2155,6 +2209,9 @@ help:
 	@echo "... src/FloatMsg.o"
 	@echo "... src/FloatMsg.i"
 	@echo "... src/FloatMsg.s"
+	@echo "... src/InputPort.o"
+	@echo "... src/InputPort.i"
+	@echo "... src/InputPort.s"
 	@echo "... src/IntegerMsg.o"
 	@echo "... src/IntegerMsg.i"
 	@echo "... src/IntegerMsg.s"
@@ -2164,6 +2221,9 @@ help:
 	@echo "... src/MsgReceiver.o"
 	@echo "... src/MsgReceiver.i"
 	@echo "... src/MsgReceiver.s"
+	@echo "... src/OutputPort.o"
+	@echo "... src/OutputPort.i"
+	@echo "... src/OutputPort.s"
 	@echo "... src/PointsMsg.o"
 	@echo "... src/PointsMsg.i"
 	@echo "... src/PointsMsg.s"
