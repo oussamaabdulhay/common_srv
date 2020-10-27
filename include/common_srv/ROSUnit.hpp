@@ -10,7 +10,7 @@
 #include "common_srv/InputPort.hpp"
 #include "common_srv/OutputPort.hpp"
 
-const int ROSUnit_capacity=7;
+const int ROSUnit_capacity=15;
 class ROSUnit : public MsgEmitter, public Block{
 
     private:

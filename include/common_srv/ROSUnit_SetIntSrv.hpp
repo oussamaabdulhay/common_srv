@@ -8,7 +8,9 @@
 class ROSUnit_SetIntSrv : public ROSUnit
 {
     public:
-        enum ports_id {OP_0, OP_1, OP_2, OP_3, OP_4};
+        enum ports_id {OP_0, OP_1, OP_2, OP_3, OP_4, 
+                        OP_5, OP_6, OP_7, OP_8, OP_9,
+                        OP_10, OP_11, OP_12, OP_13, OP_14};
         void process(DataMessage* t_msg, Port* t_port) {};
         std::vector<Port*> getPorts() {return _ports;}
         ROSUnit_SetIntSrv(std::string, ros::NodeHandle&);
@@ -22,6 +24,16 @@ class ROSUnit_SetIntSrv : public ROSUnit
     static Port* _output_port_2;
     static Port* _output_port_3;
     static Port* _output_port_4;
+    static Port* _output_port_5;
+    static Port* _output_port_6;
+    static Port* _output_port_7;
+    static Port* _output_port_8;
+    static Port* _output_port_9;
+    static Port* _output_port_10;
+    static Port* _output_port_11;
+    static Port* _output_port_12;
+    static Port* _output_port_13;
+    static Port* _output_port_14;
     static std::vector<Port*> _ports;
 
     ros::ServiceServer m_server;
@@ -34,5 +46,15 @@ class ROSUnit_SetIntSrv : public ROSUnit
     static bool srv_callback3(common_srv::set_int::Request&, common_srv::set_int::Response&);
     static bool srv_callback4(common_srv::set_int::Request&, common_srv::set_int::Response&);
     static bool srv_callback5(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback6(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback7(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback8(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback9(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback10(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback11(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback12(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback13(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback14(common_srv::set_int::Request&, common_srv::set_int::Response&);
+    static bool srv_callback15(common_srv::set_int::Request&, common_srv::set_int::Response&);
 
 };
