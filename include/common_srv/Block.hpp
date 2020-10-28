@@ -18,6 +18,5 @@ class Block {
         std::vector<Port*> getPorts() {return _ports;}
 
     protected:
-
-        static std::vector<Port*> _ports;
+        std::vector<Port*> _ports;
 };

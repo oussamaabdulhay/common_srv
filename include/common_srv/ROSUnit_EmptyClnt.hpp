@@ -18,6 +18,5 @@ class ROSUnit_EmptyClnt : public ROSUnit
 
     private:
         Port* _input_port_0;
-        std::vector<Port*> _ports;
         ros::ServiceClient m_client;
 };

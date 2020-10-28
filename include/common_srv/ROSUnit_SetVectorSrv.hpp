@@ -20,7 +20,6 @@ private:
     static Port* _output_port_2;
     static Port* _output_port_3;
     static Port* _output_port_4;
-    static std::vector<Port*> _ports;
     
     ros::ServiceServer m_server;
     static int internal_counter;

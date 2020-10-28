@@ -18,6 +18,5 @@ class ROSUnit_Point2DPub : public ROSUnit
     private:
 
         Port* _input_port_0;
-        std::vector<Port*> _ports;
         ros::Publisher m_pub;
 };

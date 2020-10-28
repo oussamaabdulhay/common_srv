@@ -21,7 +21,6 @@ class ROSUnit_FloatSub : public ROSUnit
         static Port* _output_port_2;
         static Port* _output_port_3;
         static Port* _output_port_4;
-        static std::vector<Port*> _ports;
 
         ros::Subscriber m_sub;
         static int internal_counter;

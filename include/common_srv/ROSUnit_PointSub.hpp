@@ -23,7 +23,6 @@ class ROSUnit_PointSub : public ROSUnit
         static Port* _output_port_4;
         static Port* _output_port_5;
         static Port* _output_port_6;
-        static std::vector<Port*> _ports;
 
         ros::Subscriber m_sub;
         static int internal_counter;

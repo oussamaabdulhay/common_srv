@@ -32,7 +32,6 @@ class ROSUnit_SetIntSrv : public ROSUnit
     static Port* _output_port_12;
     static Port* _output_port_13;
     static Port* _output_port_14;
-    static std::vector<Port*> _ports;
 
     ros::ServiceServer m_server;
     static int internal_counter;
