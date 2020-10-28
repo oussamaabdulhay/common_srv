@@ -11,28 +11,15 @@
 #include "common_srv/OutputPort.hpp"
 
 const int ROSUnit_capacity=15;
-class ROSUnit : public MsgEmitter, public Block{
+class ROSUnit : public Block{
 
     private:
         ros::NodeHandle _main_handler;
 
     public:
         ros::NodeHandle getNodeHandle();
-        void receiveMsgData(DataMessage* t_msg);
-
         ROSUnit(ros::NodeHandle&);
         ~ROSUnit();
-
-        //TODO Refactor below
-        block_id getID() {}
-        block_type getType() {}
-        void switchIn(DataMessage*) {}
-        DataMessage* switchOut() {}
-        DataMessage* runTask(DataMessage*) {}
+        //CHECK
         void process(DataMessage* t_msg, Port* t_port) {}
-        std::vector<Port*> getPorts() {}
-        
-    protected:
-        
-        
 };

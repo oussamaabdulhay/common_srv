@@ -16,13 +16,13 @@ Port* ROSUnit_EmptySrv::_output_port_1;
 Port* ROSUnit_EmptySrv::_output_port_2;
 Port* ROSUnit_EmptySrv::_output_port_3;
 Port* ROSUnit_EmptySrv::_output_port_4;
-std::vector<Port*> ROSUnit_EmptySrv::_ports{_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
 
 ROSUnit_EmptySrv::ROSUnit_EmptySrv(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
     m_server = t_main_handler.advertiseService(t_name, ROSUnit_EmptySrv::callbackFunctionPointer[internal_counter]);
     m_ptr[internal_counter] = this;
     internal_counter++;
+    _ports = {_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
 }
 
 ROSUnit_EmptySrv::~ROSUnit_EmptySrv()

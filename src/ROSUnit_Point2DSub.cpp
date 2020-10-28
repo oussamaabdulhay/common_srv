@@ -16,14 +16,13 @@ Port* ROSUnit_Point2DSub::_output_port_1;
 Port* ROSUnit_Point2DSub::_output_port_2;
 Port* ROSUnit_Point2DSub::_output_port_3;
 Port* ROSUnit_Point2DSub::_output_port_4;
-std::vector<Port*> ROSUnit_Point2DSub::_ports{_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
-
 
 ROSUnit_Point2DSub::ROSUnit_Point2DSub(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
     m_sub = t_main_handler.subscribe(t_name, 2, ROSUnit_Point2DSub::callbackFunctionPointer[internal_counter]);
     m_ptr[internal_counter] = this;
     internal_counter++;
+    _ports = {_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4};
 }
 
 ROSUnit_Point2DSub::~ROSUnit_Point2DSub()

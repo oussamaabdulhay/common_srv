@@ -21,14 +21,3 @@ void ROSUnit_FloatPub::process(DataMessage* t_msg, Port* t_port) {
         m_pub.publish(t_data);
     }
 }
-
-// void ROSUnit_FloatPub::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::FLOAT)
-//     {
-//         std_msgs::Float32 t_data;
-//         t_data.data = ((FloatMsg*) t_msg)->data;
-//         m_pub.publish(t_data);
-//     }
-// }

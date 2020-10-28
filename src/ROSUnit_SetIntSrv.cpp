@@ -36,9 +36,7 @@ Port* ROSUnit_SetIntSrv::_output_port_11;
 Port* ROSUnit_SetIntSrv::_output_port_12;
 Port* ROSUnit_SetIntSrv::_output_port_13;
 Port* ROSUnit_SetIntSrv::_output_port_14;
-std::vector<Port*> ROSUnit_SetIntSrv::_ports{_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4,
-                                                _output_port_5, _output_port_6, _output_port_7, _output_port_8, _output_port_9,
-                                                _output_port_10, _output_port_11, _output_port_12, _output_port_13, _output_port_14};
+//std::vector<Port*> ROSUnit_SetIntSrv::
 
 
 ROSUnit_SetIntSrv::ROSUnit_SetIntSrv(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
@@ -46,6 +44,9 @@ ROSUnit_SetIntSrv::ROSUnit_SetIntSrv(std::string t_name, ros::NodeHandle& t_main
     m_server = t_main_handler.advertiseService(t_name, ROSUnit_SetIntSrv::callbackFunctionPointer[internal_counter]);
     m_ptr[internal_counter] = this;
     internal_counter++;
+    _ports = {_output_port_0, _output_port_1, _output_port_2, _output_port_3, _output_port_4,
+                _output_port_5, _output_port_6, _output_port_7, _output_port_8, _output_port_9,
+                _output_port_10, _output_port_11, _output_port_12, _output_port_13, _output_port_14};
 }
 
 ROSUnit_SetIntSrv::~ROSUnit_SetIntSrv()

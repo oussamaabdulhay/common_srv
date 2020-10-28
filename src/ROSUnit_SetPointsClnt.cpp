@@ -37,30 +37,3 @@ void ROSUnit_SetPointsClnt::process(DataMessage* t_msg, Port* t_port) {
         
     }
 }
-
-// void ROSUnit_SetPointsClnt::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::POINTS)
-//     {
-//         common_srv::set_points t_srv;
-//         PointsMsg* t_points = (PointsMsg*) t_msg;
-//         for(int i = 0; i < t_points->points.size(); i++)
-//         {
-//             geometry_msgs::Point t_point;
-//             t_point.x =  t_points->points.at(i).x;
-//             t_point.y =  t_points->points.at(i).y;
-//             t_point.z =  t_points->points.at(i).z;
-//             t_srv.request.p.push_back(t_point);
-//         }
-//         if(m_client.call(t_srv))
-//         {
-//             //TODO: add success condition
-//         }
-//         else
-//         {
-//             //TODO: add error
-//         }
-        
-//     }
-// }

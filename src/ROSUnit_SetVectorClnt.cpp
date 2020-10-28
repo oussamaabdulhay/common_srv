@@ -34,27 +34,3 @@ void ROSUnit_SetVectorClnt::process(DataMessage* t_msg, Port* t_port) {
         }
     }
 }
-
-// void ROSUnit_SetVectorClnt::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::VECTOR)
-//     {
-//         common_srv::set_vector t_srv;
-//         VectorMsg* t_vector = (VectorMsg*) t_msg;
-//         t_srv.request.p1.x = t_vector->p1.x;
-//         t_srv.request.p1.y = t_vector->p1.y;
-//         t_srv.request.p1.z = t_vector->p1.z;
-//         t_srv.request.p1.x = t_vector->p2.x;
-//         t_srv.request.p1.y = t_vector->p2.y;
-//         t_srv.request.p1.z = t_vector->p2.z;
-//         if(m_client.call(t_srv))
-//         {
-//             //TODO: add success condition
-//         }
-//         else
-//         {
-//             //TODO: add error
-//         }
-//     }
-// }

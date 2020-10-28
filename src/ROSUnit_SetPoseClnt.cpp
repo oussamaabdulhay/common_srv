@@ -32,25 +32,3 @@ void ROSUnit_SetPoseClnt::process(DataMessage* t_msg, Port* t_port) {
         }
     }
 }
-
-// void ROSUnit_SetPoseClnt::receiveMsgData(DataMessage* t_msg)
-// {
-//     //Change the below code to match your received msg
-//     if(t_msg->getType() == msg_type::POSE)
-//     {
-//         common_srv::set_pose t_srv;
-//         PoseMsg* t_poses = (PoseMsg*) t_msg;
-//         t_srv.request.pose.point.x = t_poses->pose.x;
-//         t_srv.request.pose.point.y = t_poses->pose.y;
-//         t_srv.request.pose.point.z = t_poses->pose.z;
-//         t_srv.request.pose.yaw.data = t_poses->pose.yaw;
-//         if(m_client.call(t_srv))
-//         {
-//             //TODO: add success condition
-//         }
-//         else
-//         {
-//             //TODO: add error
-//         }
-//     }
-// }

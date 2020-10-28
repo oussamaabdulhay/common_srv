@@ -11,7 +11,6 @@ class ROSUnit_FloatPub : public ROSUnit
 
         enum ports_id {IP_0};
         void process(DataMessage* t_msg, Port* t_port);
-        std::vector<Port*> getPorts() {return _ports;};
         ROSUnit_FloatPub(std::string, ros::NodeHandle&);
         ~ROSUnit_FloatPub();
         //Change the receiveMsgData code to reflect your system
@@ -19,6 +18,5 @@ class ROSUnit_FloatPub : public ROSUnit
 
     private:
         Port* _input_port_0;
-        std::vector<Port*> _ports;
         ros::Publisher m_pub;
 };

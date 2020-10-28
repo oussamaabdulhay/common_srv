@@ -15,10 +15,8 @@ class ROSUnit_EmptyClnt : public ROSUnit
         //Change the receiveMsgData code to reflect your system
         void process(DataMessage* t_msg, Port* t_port);
         //void receiveMsgData(DataMessage* t_msg);
-        std::vector<Port*> getPorts();
 
     private:
         Port* _input_port_0;
-        std::vector<Port*> _ports;
         ros::ServiceClient m_client;
 };
