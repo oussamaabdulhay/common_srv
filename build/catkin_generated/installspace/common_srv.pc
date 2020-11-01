@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: common_srv
-Description: Description of common_srv
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lcommon_srv
-Requires: roscpp std_msgs
