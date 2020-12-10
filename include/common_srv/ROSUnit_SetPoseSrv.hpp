@@ -8,19 +8,15 @@
 class ROSUnit_SetPoseSrv : public ROSUnit
 {
 public:
-    enum ports_id {OP_0, OP_1, OP_2, OP_3, OP_4};
-    void process(DataMessage* t_msg, Port* t_port) {};
+    
     ROSUnit_SetPoseSrv(std::string, ros::NodeHandle&);
     ~ROSUnit_SetPoseSrv();
+    void receiveMsgData(DataMessage* t_msg){};
 
 private:
-    static Port* _output_port_0;
-    static Port* _output_port_1;
-    static Port* _output_port_2;
-    static Port* _output_port_3;
-    static Port* _output_port_4;
-    
+
     ros::ServiceServer m_server;
+
     static int internal_counter;
     static ROSUnit_SetPoseSrv* m_ptr[ROSUnit_capacity];
     //Change the srv_callback code to reflect your system

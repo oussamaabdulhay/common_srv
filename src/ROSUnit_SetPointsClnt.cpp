@@ -2,8 +2,6 @@
 
 ROSUnit_SetPointsClnt::ROSUnit_SetPointsClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
-    _input_port_0 = new InputPort(ports_id::IP_0, this);
-    _ports = {_input_port_0};
     m_client = t_main_handler.serviceClient<common_srv::set_points>(t_name);
 }
 
@@ -12,9 +10,10 @@ ROSUnit_SetPointsClnt::~ROSUnit_SetPointsClnt()
 
 }
 
-void ROSUnit_SetPointsClnt::process(DataMessage* t_msg, Port* t_port) {
+void ROSUnit_SetPointsClnt::receiveMsgData(DataMessage* t_msg)
+{
     //Change the below code to match your received msg
-    if(t_port->getID() == ports_id::IP_0)
+    if(t_msg->getType() == msg_type::POINTS)
     {
         common_srv::set_points t_srv;
         PointsMsg* t_points = (PointsMsg*) t_msg;
@@ -37,3 +36,4 @@ void ROSUnit_SetPointsClnt::process(DataMessage* t_msg, Port* t_port) {
         
     }
 }
+

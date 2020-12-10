@@ -6,20 +6,20 @@
 #include "common_srv/MsgReceiver.hpp"
 #include "common_srv/MsgEmitter.hpp"
 #include "common_srv/msg_types.hpp"
-#include "Block.hpp"
-#include "common_srv/InputPort.hpp"
-#include "common_srv/OutputPort.hpp"
 
-const int ROSUnit_capacity=15;
-class ROSUnit : public Block{
+const int ROSUnit_capacity=7;
+class ROSUnit : public MsgEmitter, public MsgReceiver{
 
     private:
         ros::NodeHandle _main_handler;
 
     public:
         ros::NodeHandle getNodeHandle();
+        virtual void receiveMsgData(DataMessage* t_msg) = 0;
+
         ROSUnit(ros::NodeHandle&);
         ~ROSUnit();
-        //CHECK
-        void process(DataMessage* t_msg, Port* t_port) {}
+    protected:
+        
+        
 };

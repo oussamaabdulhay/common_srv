@@ -8,6 +8,7 @@ template  <class L> class Vector2D;
 #include <cstdint>
 #include <math.h>
 #include <initializer_list>
+#include <ros/ros.h>
 
 template <class T>  
 class Vector3D
@@ -17,6 +18,7 @@ class Vector3D
                 T x = 0;
                 T y = 0;
                 T z = 0;
+                ros::Time time; //Added the time stamp for the detection code.
                 Vector3D<T>(){};
                 Vector3D<T>(std::initializer_list<T> tmp){this->x = *tmp.begin(); this->y = *(tmp.begin()+1); this->z = *(tmp.begin()+2);};
 

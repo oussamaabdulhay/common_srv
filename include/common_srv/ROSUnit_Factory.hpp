@@ -7,6 +7,8 @@
 #include "common_srv/ROSUnit_Point2DSub.hpp"
 #include "common_srv/ROSUnit_PointPub.hpp"
 #include "common_srv/ROSUnit_PointSub.hpp"
+#include "common_srv/ROSUnit_PointUint64Pub.hpp"
+#include "common_srv/ROSUnit_PointUint64Sub.hpp"
 #include "common_srv/ROSUnit_EmptyClnt.hpp"
 #include "common_srv/ROSUnit_EmptySrv.hpp"
 #include "common_srv/ROSUnit_SetFloatClnt.hpp"
@@ -26,7 +28,7 @@
 
 #include <string>
 enum ROSUnit_tx_rx_type {Client,Subscriber,Server,Publisher};
-enum ROSUnit_msg_type {ROSUnit_Empty,ROSUnit_Float,ROSUnit_Int,ROSUnit_Point,ROSUnit_Points,ROSUnit_Pose,ROSUnit_Poses,ROSUnit_Vector,ROSUnit_Point2D};
+enum ROSUnit_msg_type {ROSUnit_Empty,ROSUnit_Float,ROSUnit_Int,ROSUnit_Point,ROSUnit_Points,ROSUnit_Pose,ROSUnit_Poses,ROSUnit_Vector,ROSUnit_Point2D,ROSUnit_PointUint64};
 
 class ROSUnit_Factory {
 private:

@@ -18,3 +18,12 @@ const int FloatMsg::getSize()
 {
     return sizeof(FloatMsg);
 }
+
+float FloatMsg::getData(){
+    return _data;
+}
+
+void FloatMsg::setFloatMsg(float t_data) {
+    _type = msg_type::FLOAT;
+    _data = t_data;
+}

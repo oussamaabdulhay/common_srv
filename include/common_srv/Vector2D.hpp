@@ -9,6 +9,7 @@ template  <class L> class Vector3D;
 #include <initializer_list>
 #include "Vector3D.hpp"
 #include <math.h>
+#include <ros/ros.h>
 template <class T>
 class Vector2D
 {
@@ -17,6 +18,7 @@ class Vector2D
                 Vector2D<T>(std::initializer_list<T> tmp){this->x = *tmp.begin(); this->y = *(tmp.begin()+1);}
                 T x = 0;
                 T y = 0;
+                ros::Time time; //Added the time stamp for the detection code.
 
                 Vector2D<T> operator + (Vector2D<T> obj)
                 {

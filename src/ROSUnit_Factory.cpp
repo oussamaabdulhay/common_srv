@@ -85,6 +85,16 @@ ROSUnit* ROSUnit_Factory::CreateROSUnit(ROSUnit_tx_rx_type t_ros_msg_type_rx_tx,
             }
         }
         break;
+        case ROSUnit_msg_type::ROSUnit_PointUint64:
+        {
+            if(t_ros_msg_type_rx_tx==ROSUnit_tx_rx_type::Subscriber){
+                new_ros_unit_ptr=new ROSUnit_PointUint64Sub(ROS_path,nh);
+            }
+            else if(t_ros_msg_type_rx_tx==ROSUnit_tx_rx_type::Publisher){
+                new_ros_unit_ptr=new ROSUnit_PointUint64Pub(ROS_path,nh);
+            }
+        }
+        break;
         case ROSUnit_msg_type::ROSUnit_Points:
         {
             if (t_ros_msg_type_rx_tx==ROSUnit_tx_rx_type::Client){

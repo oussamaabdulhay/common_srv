@@ -2,8 +2,6 @@
 
 ROSUnit_SetVectorClnt::ROSUnit_SetVectorClnt(std::string t_name, ros::NodeHandle& t_main_handler) : ROSUnit(t_main_handler)
 {
-    _input_port_0 = new InputPort(ports_id::IP_0, this);
-    _ports = {_input_port_0};
     m_client = t_main_handler.serviceClient<common_srv::set_vector>(t_name);
 }
 
@@ -12,9 +10,10 @@ ROSUnit_SetVectorClnt::~ROSUnit_SetVectorClnt()
 
 }
 
-void ROSUnit_SetVectorClnt::process(DataMessage* t_msg, Port* t_port) {
+void ROSUnit_SetVectorClnt::receiveMsgData(DataMessage* t_msg)
+{
     //Change the below code to match your received msg
-    if(t_port->getID() == ports_id::IP_0)
+    if(t_msg->getType() == msg_type::VECTOR)
     {
         common_srv::set_vector t_srv;
         VectorMsg* t_vector = (VectorMsg*) t_msg;
@@ -32,5 +31,7 @@ void ROSUnit_SetVectorClnt::process(DataMessage* t_msg, Port* t_port) {
         {
             //TODO: add error
         }
+        
     }
 }
+
